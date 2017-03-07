@@ -15,6 +15,6 @@ block content
           td= post.getContent()
           td= post.getDescription()
           td= post.getType()
-          if post.constructor == 'Article'
-          td=post.getPublisher()
+          if post.constructor.name == 'Article'
+            td=post.getPublisher()
 
