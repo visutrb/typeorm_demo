@@ -1,0 +1,25 @@
+{
+  "development": {
+    "adapter": "postgres",
+    "host": "localhost",
+    "user": "$NODE_TEST_USER",
+    "password": "$NODE_TEST_PASSWORD",
+    "database": "$NODE_TEST_DATABASE"
+  },
+
+  "test": {
+    "adapter": "postgres",
+    "host": "localhost",
+    "user": "$NODE_TEST_USER",
+    "password": "$NODE_TEST_PASSWORD",
+    "database": "$NODE_TEST_DATABASE"
+  },
+
+  "production": {
+    "adapter": "postgres",
+    "host": "localhost",
+    "user": "$NODE_TEST_USER",
+    "password": "$NODE_TEST_PASSWORD",
+    "database": "$NODE_TEST_DATABASE"
+  }
+}

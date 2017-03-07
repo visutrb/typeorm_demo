@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+  h1 Posts
+  table
+    thead
+      tr
+        th Content
+        th Description
+        th Type
+        th Publisher (if any)
+    tbody
+      each post in posts
+        tr
+          td= post.getContent()
+          td= post.getDescription()
+          td= post.getType()
+          if post.constructor == 'Article'
+          td=post.getPublisher()
+
